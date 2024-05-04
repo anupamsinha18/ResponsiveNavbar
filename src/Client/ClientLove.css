@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+body
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.clientLove {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+}
+
+h1{
+    align-items: center;
+}.container-courosal {
+    display: flex;
+    flex-direction: column; /* Change flex direction to column */
+    align-items: center; /* Center items horizontally */
+    width: 100%;
+    height: auto; /* Adjust height as needed */
+  }
+  
+  .nameofpeople {
+    width: 50%; /* Take full width of container */
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    flex-wrap: wrap; /* Allow items to wrap to next line if needed */
+  }
+  
+  .nameofpeople li {
+    text-decoration: none;
+    display: flex;
+    margin-bottom: 10px; /* Add margin between list items */
+  }
+  
+  .carousel-container {
+    margin-top: 30px;
+    width: 80%; /* Take full width of container */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center items vertically */
+  }
+  
+  .image-container {
+    /* border: 1px red;     */
+    width: 80%; /* Take full width of container */
+    /* display: flex; */
+    width: 500px;
+    /* justify-content: center; */
+  }
+  
+  .image-container img {
+    /* flex: 0 0 40%; */
+    width: 90%;
+    height: 500px;
+    /* margin-right: 20px; */
+  }
+  
+  .interal-image-container{
+    /* width: 80%; */
+    display: flex;
+
+
+  }
+  .information{
+    display: flex;
+  }
+  .card{
+    height:400px;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid #ddd; */
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  }
+  .text-container{
+/* display: flex; */
+/* justify-content: flex-start; */
+    /* flex: 1; */
+    width: 500px;
+    /* margin-left: -400px; */
+    /* text-align: center; */
+  }
+  .arrow-button {
+  
+  }
+  .arrow-button:focus {
+    outline: none;
+  }
+  
+
+  .arrow-iconleft {
+    /* position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333; /* Adjust color as needed */
+    /* left: 0;  */
+  }
+  
+  .arrow-iconright {
+    /* right: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;  */
+  }
+
+  .nameofpeople {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nameofpeople li {
+    cursor: pointer;
+    padding: 8px;
+    margin: 2px;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease, transform 0.3s ease; 
+     /* Initially set border to transparent */
+  }
+  
+  .nameofpeople li.selected {
+    border-color: #8EA4AE;
+    transform: scale(1.2);
+     /* Change border color for selected item */
+  }
