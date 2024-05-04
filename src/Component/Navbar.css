@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+.logo img {
+  margin-top:10px ;
+    height: 40px;
+    width: 90px;
+    margin-bottom: 10px;
+  }
+  
+  .logo {
+    /* width: 100%; */
+    width: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .top-header {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 20px; Added padding */
+  }
+  
+  .icons {
+    width: 150px;
+    display: flex;
+    /* padding-right: 150px; */
+    justify-content: space-around;
+    align-items: center;
+  }
+  .icons i{
+    width: 40px;
+    /* height: 70px; */
+  }
+  
+  .offer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    width: 30%; /* Adjust width as needed */
+    height: 100%;
+    background-color: #4B5C5E;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .offer.show {
+    transform: translateX(0);
+  }
+  
+  .navbar-container {
+    display: flex;
+    width: 50%;
+    flex-direction: column; /* Stack list items vertically */
+    align-items: flex-start; /* Align items to the left */
+    /* padding: 20px; */
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    font-size: 20px;
+    /* padding: 10px 0; */
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  hr{
+    width: 100%;
+  }
+  a:hover{
+cursor: pointer;
+text-decoration: none;
+color: wheat;
+/* box-shadow: 10px 10px; */
+/* background-color: aqua; */
+  }
+ 
+  .toggle-offer {
+    display: none; /* Initially hide the toggle button */
+  }
+  .offfer {
+    /* width: 80%; */
+    padding-left: 20%;
+    padding-right:20% ;
+  }
+  
+  .navbar-container2 {
+    display: flex;
+    justify-content: center;
+  }
+  
+.navbar-container2  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+.navbar-container2  li {
+    font-size: 20px;  
+    color:black;
+    /* border: 1px solid wheat; */
+    text-align: center;
+    width: 150px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 0 10px; /* Adjust spacing as needed */
+  }
+  
+  @media screen and (max-width: 978px) {
+    .top-header {
+      /* padding-left: 0; Remove left padding */
+      /* padding-right: 20px; Add right padding */
+    }
+  
+    .offer {
+      width: 70%;
+    }
+  
+    .toggle-offer {
+      display: flex;
+      justify-content: end;
+      /* margin-left: 200px; Show the toggle button */
+      /* padding: 0 20px; Add padding to the toggle button */
+    }
+  
+  
+    .icons {
+      /* display: none; Hide icons on smaller screens */
+    }
+  
+    .logo {
+      /* padding-left: 20px; Add left padding to logo */
+    }
+  
+    .navbar-container {
+      width: 100%;
+      /* padding: 20px; */
+    }
+    .navbar-container ul{
+      width: 100%;
+    }
+    .navbar-container li{
+      padding: 20px;
+      line-height: 20px;
+      font-weight: 400;
+      height: 20px;
+
+    }
+    .offfer{
+        display: none;
+       /* width: 100%; */
+    }
+ 
+  }
